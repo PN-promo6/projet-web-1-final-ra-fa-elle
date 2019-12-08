@@ -1,0 +1,436 @@
+/*---Général----------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/*---Header et nav/------------------------------------------*/
+#promo {
+  width: 100%;
+  display: block;
+  background-color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 0px;
+  font-family: "questrial";
+  letter-spacing: 0.20em;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+#promo a {
+  color: white;
+}
+
+#rose {
+  color: #fdb6b6;
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+#icrow img {
+  height: 35px;
+  width: auto;
+}
+
+#mobilemenu {
+  display: none;
+}
+
+#wrapper {
+  width: 100%;
+  flex-flow: wrap;
+  height: 636.17px;
+  display: flex;
+  background-image: url("images/blanc.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+#wrapper nav {
+  background-color: #c6cFa2;
+  opacity: 0.9;
+  width: 90%;
+  margin-top: 20px;
+  position: relative;
+  left: 64px;
+  max-height: 150px;
+}
+
+#titre {
+  text-align: center;
+}
+
+#titre a {
+  color: #121A0E;
+  text-transform: uppercase;
+  font-size: 225%;
+}
+
+.tallerletter {
+  color: #425225;
+}
+
+#icrow {
+  position: absolute;
+  right: 1em;
+  top: 37px;
+}
+
+#wrapper ul {
+  padding-top: 35px;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+#wrapper ul li a {
+  color: black;
+  font-size: 1em;
+  letter-spacing: 0.045em;
+  font-weight: bold;
+  font-family: "cinzel";
+  text-transform: uppercase;
+}
+
+#accroche {
+  text-transform: uppercase;
+  color: white;
+  margin-left: 32px;
+}
+
+#accroche1 {
+  font-family: "cinzel";
+  font-size: 3em;
+  text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.15em;
+}
+
+#accroche2 {
+  font-size: 3.2em;
+  text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.15em;
+  position: relative;
+  bottom: 2em;
+}
+
+/* main/-----------------------------------------------*/
+#pres {
+  width: 100%;
+  padding-bottom: 10px;
+  font-family: "questrial";
+  border-bottom: 0.5px solid #425225;
+  text-align: center;
+}
+
+#pres h2 {
+  font-size: 2em;
+  letter-spacing: 0.15em;
+}
+
+#pres h3 {
+  color: #455B1D;
+  font-size: 1em;
+  letter-spacing: 0.15em;
+}
+
+/*------Barre de tri------------------------------------------*/
+.maj {
+  color: #425225;
+  font-size: 35px;
+}
+
+#tris ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  color: #121A0E;
+}
+
+#tris ul li a {
+  color: #121A0E;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 0.045em;
+  font-family: "cinzel";
+}
+
+/*----Rangée de produits----------------------------------------------*/
+#products {
+  position: relative;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 25px;
+}
+
+img {
+  max-width: 90%;
+}
+
+.singleprod {
+  font-size: 1em;
+  font-weight: lighter;
+  font-family: "questrial";
+}
+
+.fav-icon {
+  width: 15%;
+  height: auto;
+  position: relative;
+  top: 70px;
+  left: 15px;
+  z-index: 1000;
+}
+
+.test {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#prix {
+  position: relative;
+  right: -5%;
+  padding-top: 1em;
+  font-size: 18px;
+}
+
+/*----Coloris-----------------*/
+.colorctn {
+  display: flex;
+  margin-top: 5px;
+  padding-bottom: 15px;
+}
+
+.rond {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+#ray1 {
+  background-image: url("motifs/bleu.jpg");
+}
+
+#ray2 {
+  background-image: url("motifs/rose.jpg");
+}
+
+#ray3 {
+  background-image: url("motifs/doré.jpg");
+}
+
+#cl-rouge {
+  background-color: #DC1A19;
+}
+
+#cl-bleu {
+  background-color: #0B014E;
+}
+
+#cl-kaki {
+  background-color: #72803D;
+}
+
+#cl-blanc {
+  border: solid 0.5px rgba(0, 0, 0, 0.5);
+}
+
+#cl-noir {
+  background-color: black;
+}
+
+#cl-jaune {
+  background-color: #FFAC4B;
+}
+
+#cl-pourpre {
+  background-color: #5E1418;
+}
+
+/*----CTA ajout au panier-----*/
+.bouton {
+  position: relative;
+  left: 95px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  color: #0E1209;
+  font-size: 1em;
+  padding: 5px;
+  margin-top: 10px;
+  width: 45%;
+  font-family: "cinzel";
+  letter-spacing: 0.050em;
+  margin-bottom: 5px;
+}
+
+.bouton:hover {
+  color: #425225;
+  border: 1.5px solid #425225;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*-------Avantages-----------------------------------------------------------*/
+#avantage {
+  width: 100%;
+  text-align: left;
+  border-top: solid #425225 0.5px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  margin-top: 15px;
+  padding-bottom: 25px;
+  border-bottom: solid #425225 0.5px;
+}
+
+#adv {
+  padding-top: 0;
+  display: inline;
+  width: 30%;
+}
+
+#adv p {
+  text-align: left;
+  padding-left: 13px;
+  margin: 0 0;
+}
+
+#avantage img {
+  left: 10%;
+  margin-left: 10px;
+  height: 70px;
+  opacity: 0.8;
+}
+
+.titreadv {
+  font-family: "questrial";
+  font-size: 1em;
+  color: #424242;
+  font-weight: lighter;
+}
+
+.padv {
+  font-family: "questrial";
+  font-size: 0.75em;
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  font-size: 0.9em;
+  font-family: "questrial";
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(113, 131, 33, 0.2);
+}
+
+.footcol {
+  text-align: left;
+  max-width: 30%;
+}
+
+.foottitre {
+  font-size: 1em;
+}
+
+.footnav ul {
+  padding-left: 0;
+}
+
+.footnav ul li a {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.9em;
+}
+
+#pfoot {
+  position: relative;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.8em;
+}
+
+/*--FORMULAIRE--------------------------------------------------------*/
+.footform ul {
+  padding-left: 0;
+}
+
+.footform {
+  position: relative;
+  bottom: 31px;
+  display: flex;
+}
+
+.footform li {
+  padding-top: 15px;
+}
+
+label {
+  max-width: 100%;
+  font-size: 0.9em;
+  padding-right: 10px;
+}
+
+#name {
+  border: none;
+  width: 61%;
+}
+
+#Email {
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: none;
+  margin-left: 15px;
+}
+
+textarea {
+  width: 100%;
+  height: 65%;
+  border: none;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+#bout {
+  position: relative;
+  left: 30%;
+  background: white;
+  border: none;
+  color: #0E1209;
+  padding: 5px;
+  width: 40%;
+  margin-bottom: 5px;
+  font-family: "questrial";
+}
+
+#bout:hover {
+  color: #425225;
+  border: 1.3px solid #425225;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#haut {
+  position: relative;
+  font-size: 0.7em;
+}

@@ -1,0 +1,12 @@
+@media (max-device-width:640px) {
+
+
+    #mobilemenu {
+        display: block;
+    }
+
+    .menupc {
+        display: none;
+    }
+
+}
